@@ -11,11 +11,13 @@ describe('create the AlpsGraphQL', () => {
 
       // WHEN
       new AlpsGraphQL(stack, 'AlpsGraphQL', {
+        name: 'demo',
         alpsSpecFile: 'src/todo-alps.yaml',
       });
 
       // THEN
       expect(stack).toHaveResource('AWS::AppSync::GraphQLApi');
+      expect(stack).toHaveResource('AWS::AppSync::GraphQLSchema');
     });
   });
 
@@ -27,12 +29,14 @@ describe('create the AlpsGraphQL', () => {
 
       expect(() => {
         new AlpsGraphQL(stack, 'AlpsGraphQL', {
+          name: 'demo',
           alpsSpecFile: 'src/abs',
         });
       }).toThrowError();
 
       expect(() => {
         new AlpsGraphQL(stack, 'AlpsGraphQL', {
+          name: 'demo',
           alpsSpecFile: 'src/index.ts',
         });
       }).toThrowError();

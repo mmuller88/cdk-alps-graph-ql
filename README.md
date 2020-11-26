@@ -24,9 +24,10 @@ Very useful to understand the idea of ALPS API is this video on YouTube: https:/
 ```ts
 const app = new cdk.App();
 
-const stack = new cdk.Stack(app, 'my-demo-stack', { env });
+const stack = new cdk.Stack(app, 'alps-graph-ql-stack', { env });
 
 new AlpsGraphQL(stack, 'AlpsGraphQL', {
+  name: 'demo',
   alpsSpecFile: 'src/todo-alps.yaml',
 });
 ```
@@ -53,6 +54,4 @@ npx cdk --app lib/integ.default.js --profile <profile> destroy
 
 # Limitations / Issues / TODOS
 
-- (AWS) Authorizer and Validator are not supported yet
-- only alps YAML files are supported. alps JSON files will be added
-- only Lambda integrations are supported and the endpoints are per default mapped to lambdas with the same name as the operationId.
+- only ALPS YAML files are supported. ALPS JSON files will be added
