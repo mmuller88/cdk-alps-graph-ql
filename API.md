@@ -4,18 +4,18 @@
 
 Name|Description
 ----|-----------
-[AlpsSpecRestApi](#cdk-alps-spec-rest-api-alpsspecrestapi)|*No description*
+[AlpsGraphQL](#cdk-alps-graph-ql-alpsgraphql)|*No description*
 
 
 **Structs**
 
 Name|Description
 ----|-----------
-[AlpsSpecRestApiProps](#cdk-alps-spec-rest-api-alpsspecrestapiprops)|*No description*
+[AlpsGraphQLProps](#cdk-alps-graph-ql-alpsgraphqlprops)|*No description*
 
 
 
-## class AlpsSpecRestApi  <a id="cdk-alps-spec-rest-api-alpsspecrestapi"></a>
+## class AlpsGraphQL  <a id="cdk-alps-graph-ql-alpsgraphql"></a>
 
 
 
@@ -28,14 +28,13 @@ __Extends__: [Construct](#aws-cdk-core-construct)
 
 
 ```ts
-new AlpsSpecRestApi(scope: Construct, id: string, props: AlpsSpecRestApiProps)
+new AlpsGraphQL(scope: Construct, id: string, props: AlpsGraphQLProps)
 ```
 
 * **scope** (<code>[Construct](#aws-cdk-core-construct)</code>)  *No description*
 * **id** (<code>string</code>)  *No description*
-* **props** (<code>[AlpsSpecRestApiProps](#cdk-alps-spec-rest-api-alpsspecrestapiprops)</code>)  *No description*
+* **props** (<code>[AlpsGraphQLProps](#cdk-alps-graph-ql-alpsgraphqlprops)</code>)  *No description*
   * **alpsSpecFile** (<code>string</code>)  ALPS Spec File. 
-  * **operationIdLambdaMapping** (<code>Map<string, string></code>)  Optional mapping from openApi spec operationId to Lambda name. __*Optional*__
 
 
 
@@ -48,7 +47,7 @@ Name | Type | Description
 
 
 
-## struct AlpsSpecRestApiProps  <a id="cdk-alps-spec-rest-api-alpsspecrestapiprops"></a>
+## struct AlpsGraphQLProps  <a id="cdk-alps-graph-ql-alpsgraphqlprops"></a>
 
 
 
@@ -58,7 +57,6 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **alpsSpecFile** | <code>string</code> | ALPS Spec File.
-**operationIdLambdaMapping**? | <code>Map<string, string></code> | Optional mapping from openApi spec operationId to Lambda name.<br/>__*Optional*__
 
 
 

@@ -1,8 +1,8 @@
-[![NPM version](https://badge.fury.io/js/cdk-alps-spec-rest-api.svg)](https://badge.fury.io/js/cdk-alps-spec-rest-api)
-[![PyPI version](https://badge.fury.io/py/cdk-alps-spec-rest-api.svg)](https://badge.fury.io/py/cdk-alps-spec-rest-api)
-![Release](https://github.com/mmuller88/cdk-alps-spec-rest-api/workflows/Release/badge.svg)
+[![NPM version](https://badge.fury.io/js/cdk-alps-graph-ql.svg)](https://badge.fury.io/js/cdk-alps-graph-ql)
+[![PyPI version](https://badge.fury.io/py/cdk-alps-graph-ql.svg)](https://badge.fury.io/py/cdk-alps-graph-ql)
+![Release](https://github.com/mmuller88/cdk-alps-graph-ql/workflows/Release/badge.svg)
 
-# CDK Alps Spec Rest Api
+# CDK Alps Graph QL
 
 The CDK Alps Spec Rest Api construct generates an AWS API Gateway out of an ALPS API yaml file such src/todo-alps.yaml. ALPS API is an abstraction of APIs like REST API or Graph QL. More about the ALPS API see in the ALPS API section.
 
@@ -26,7 +26,7 @@ const app = new cdk.App();
 
 const stack = new cdk.Stack(app, 'my-demo-stack', { env });
 
-new AlpsSpecRestApi(stack, 'AlpsSpecRestApi', {
+new AlpsGraphQL(stack, 'AlpsGraphQL', {
   alpsSpecFile: 'src/todo-alps.yaml',
 });
 ```

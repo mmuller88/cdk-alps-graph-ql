@@ -1,5 +1,5 @@
 import * as cdk from '@aws-cdk/core';
-import { AlpsSpecRestApi } from './index';
+import { AlpsGraphQL } from './index';
 
 export class IntegTesting {
   readonly stack: cdk.Stack[];
@@ -11,9 +11,9 @@ export class IntegTesting {
       account: process.env.CDK_DEFAULT_ACCOUNT,
     };
 
-    const stack = new cdk.Stack(app, 'my-demo-stack', { env });
+    const stack = new cdk.Stack(app, 'alps-graph-ql-stack', { env });
 
-    new AlpsSpecRestApi(stack, 'AlpsSpecRestApi', {
+    new AlpsGraphQL(stack, 'AlpsGraphQL', {
       alpsSpecFile: 'src/todo-alps.yaml',
     });
 
