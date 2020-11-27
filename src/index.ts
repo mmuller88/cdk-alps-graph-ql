@@ -12,7 +12,7 @@ export interface AlpsGraphQLProps extends appsync.GraphqlApiProps {
 export class AlpsGraphQL extends appsync.GraphqlApi {
 
   constructor(scope: cdk.Construct, id: string, props: AlpsGraphQLProps) {
-    // convert ALPS yaml to graph ql schema file in tmp/schema.graphql .
+    // convert ALPS yaml to graph ql schema file in tmp/schema.graphql
     unified(props.alpsSpecFile);
     super(scope, id, {
       ...props,
