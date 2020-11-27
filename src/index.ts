@@ -24,5 +24,5 @@ export class AlpsGraphQL extends appsync.GraphqlApi {
 function unified(alpSpec: string) {
   // eslint-disable-next-line @typescript-eslint/no-require-imports
   const { execSync } = require('child_process');
-  execSync(`node_modules/unified/src/index.js -f ${alpSpec} -t s -o tmp/schema.graphql`);
+  execSync(`node_modules/unified/src/index.js -f ${alpSpec} -t s -o ${join(__dirname, '../tmp/schema.graphql')}`);
 };
