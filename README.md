@@ -4,7 +4,7 @@
 
 # CDK Alps Graph QL
 
-The CDK Alps Spec Rest Api construct generates an AWS API Gateway out of an ALPS API yaml file such src/todo-alps.yaml. ALPS API is an abstraction of APIs like REST API or Graph QL. More about the ALPS API see in the ALPS API section.
+The CDK Alps Graph QL construct generates an AWS Graph QL out of an ALPS API yaml file such src/todo-alps.yaml. ALPS API is an abstraction of APIs like REST API or Graph QL. More about the ALPS API see in the ALPS API section.
 
 The AWS CDK construct repo was generated with [Projen](https://github.com/projen/projen) as **awscdk-construct**
 
@@ -17,7 +17,7 @@ The AWS CDK construct repo was generated with [Projen](https://github.com/projen
 
 The ALPS API converter is on GitHub on: https://github.com/mamund/alps-unified
 
-Very useful to understand the idea of ALPS API is this video on YouTube: https://www.youtube.com/watch?v=oG6-r3UdenE
+Very useful to understand the idea of ALPS API is this video on YT: https://www.youtube.com/watch?v=oG6-r3UdenE
 
 # Sample
 
