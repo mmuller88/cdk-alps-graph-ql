@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.5 (2020-11-27)
+
+
+### Bug Fixes
+
+* add tmpFile property as workaround ([c62c90e](https://github.com/mmuller88/cdk-alps-graph-ql/commit/c62c90e0989e84799277c9054b1baeb20f975680))
+
 ### 0.0.4 (2020-11-27)
 
 ### 0.0.3 (2020-11-27)
