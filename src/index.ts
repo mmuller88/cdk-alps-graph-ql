@@ -7,6 +7,10 @@ export interface AlpsGraphQLProps extends appsync.GraphqlApiProps {
    * ALPS Spec File. Must be YAML.
    */
   readonly alpsSpecFile: string;
+  /**
+   * Workaround for unified cli
+   */
+  readonly tmpFile: string;
 }
 
 export class AlpsGraphQL extends appsync.GraphqlApi {
@@ -16,7 +20,8 @@ export class AlpsGraphQL extends appsync.GraphqlApi {
     unified(props.alpsSpecFile);
     super(scope, id, {
       ...props,
-      schema: appsync.Schema.fromAsset('tmp/schema.graphql'),
+      // schema: appsync.Schema.fromAsset(join(__dirname, '../tmp/schema.graphql')),
+      schema: appsync.Schema.fromAsset(props.tmpFile),
     });
   }
 }

@@ -29,6 +29,7 @@ const stack = new cdk.Stack(app, 'alps-graph-ql-stack', { env });
 new AlpsGraphQL(stack, 'AlpsGraphQL', {
   name: 'demo',
   alpsSpecFile: 'src/todo-alps.yaml',
+  tmpFile: join(__dirname, '../tmp/schema.graphql'),
 });
 ```
 
