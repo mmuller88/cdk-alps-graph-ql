@@ -11,7 +11,7 @@ The AWS CDK construct repo was generated with [Projen](https://github.com/projen
 # Thanks
 
 - To Pahud for the helpful AWS CDK Construct video: https://www.youtube.com/watch?v=cTsSXYOYQPw
-- Mike Amundsen for the ALPS API idea and help
+- Mike Amundsen for the ALPS API idea and help.
 
 # ALPS API
 
