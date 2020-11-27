@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/mmuller88/cdk-alps-graph-ql/compare/v0.0.1...v0.0.2) (2020-11-27)
+
+
+### Features
+
+* comment out integ snapshot test ([645c5e1](https://github.com/mmuller88/cdk-alps-graph-ql/commit/645c5e1e1118eeba8af059671ea1fdd1c275c382))
+* comment out integ snapshot test ([7efa4d3](https://github.com/mmuller88/cdk-alps-graph-ql/commit/7efa4d314a70cea3476c1a15ba55c29de774acc1))
+
+
+### Bug Fixes
+
+* graphql folder ([a872eb7](https://github.com/mmuller88/cdk-alps-graph-ql/commit/a872eb7f785e973b8dd8a1646c02d339708abf9c))
+
 ### [0.0.1](https://github.com/mmuller88/cdk-alps-graph-ql/compare/v0.1.1...v0.0.1) (2020-11-27)
 
 
