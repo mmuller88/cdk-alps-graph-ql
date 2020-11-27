@@ -1,4 +1,4 @@
-import { join } from 'path';
+// import { join } from 'path';
 import * as appsync from '@aws-cdk/aws-appsync';
 import * as cdk from '@aws-cdk/core';
 
@@ -16,7 +16,7 @@ export class AlpsGraphQL extends appsync.GraphqlApi {
     unified(props.alpsSpecFile);
     super(scope, id, {
       ...props,
-      schema: appsync.Schema.fromAsset(join(__dirname, '../tmp/schema.graphql')),
+      schema: appsync.Schema.fromAsset('tmp/schema.graphql'),
     });
   }
 }
@@ -24,5 +24,5 @@ export class AlpsGraphQL extends appsync.GraphqlApi {
 function unified(alpSpec: string) {
   // eslint-disable-next-line @typescript-eslint/no-require-imports
   const { execSync } = require('child_process');
-  execSync(`node_modules/unified/src/index.js -f ${alpSpec} -t s -o ${join(__dirname, '../tmp/schema.graphql')}`);
+  execSync(`node_modules/unified/src/index.js -f ${alpSpec} -t s -o tmp/schema.graphql`);
 };
