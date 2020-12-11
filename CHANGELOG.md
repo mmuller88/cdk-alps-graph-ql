@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.6 (2020-12-11)
+
+
+### Features
+
+* add new alps-unified-ts lib ([263abb8](https://github.com/mmuller88/cdk-alps-graph-ql/commit/263abb85291b6cf266553ddb8b7af515fee0b7ed))
+
 ### 0.0.5 (2020-11-27)
 
 
