@@ -1,4 +1,3 @@
-import { join } from 'path';
 import * as cdk from '@aws-cdk/core';
 import { AlpsGraphQL } from './index';
 
@@ -17,7 +16,6 @@ export class IntegTesting {
     new AlpsGraphQL(stack, 'AlpsGraphQL', {
       name: 'demo',
       alpsSpecFile: 'src/todo-alps.yaml',
-      tmpFile: join(__dirname, '../tmp/schema.graphql'),
     });
 
     this.stack = [stack];

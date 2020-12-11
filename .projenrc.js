@@ -1,20 +1,16 @@
 const { AwsCdkConstructLibrary } = require('projen');
 
 const deps = [
-  'boxen',
-  'chalk',
-  'yamljs',
-  'yargs@16.1.1',
-  'unified@https://github.com/mamund/alps-unified'
+  'alps-unified-ts',
 ];
 
 const project = new AwsCdkConstructLibrary({
-  authorAddress: "damadden88@googlemail.com",
-  authorName: "Martin Mueller",
-  name: "cdk-alps-graph-ql",
-  defaultReleaseBranch: "main",
-  cdkVersion: "1.75.0",
-  repository: "https://github.com/mmuller88/cdk-alps-graph-ql.git",
+  authorAddress: 'damadden88@googlemail.com',
+  authorName: 'Martin Mueller',
+  name: 'cdk-alps-graph-ql',
+  defaultReleaseBranch: 'main',
+  cdkVersion: '1.75.0',
+  repository: 'https://github.com/mmuller88/cdk-alps-graph-ql.git',
   deps: deps,
   // peerDeps: deps,
   bundledDeps: deps,

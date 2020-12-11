@@ -1,7 +1,6 @@
 import { App, Stack } from '@aws-cdk/core';
 import { AlpsGraphQL } from '../src';
 import '@aws-cdk/assert/jest';
-import { join } from 'path';
 
 describe('create the AlpsGraphQL', () => {
   describe('correctly', () => {
@@ -14,7 +13,6 @@ describe('create the AlpsGraphQL', () => {
       new AlpsGraphQL(stack, 'AlpsGraphQL', {
         name: 'demo',
         alpsSpecFile: 'src/todo-alps.yaml',
-        tmpFile: join(__dirname, '../tmp/schema.graphql'),
       });
 
       // THEN
@@ -33,7 +31,6 @@ describe('create the AlpsGraphQL', () => {
         new AlpsGraphQL(stack, 'AlpsGraphQL', {
           name: 'demo',
           alpsSpecFile: 'src/abs',
-          tmpFile: join(__dirname, '../tmp/schema.graphql'),
         });
       }).toThrowError();
 
@@ -41,7 +38,6 @@ describe('create the AlpsGraphQL', () => {
         new AlpsGraphQL(stack, 'AlpsGraphQL', {
           name: 'demo',
           alpsSpecFile: 'src/index.ts',
-          tmpFile: join(__dirname, '../tmp/schema.graphql'),
         });
       }).toThrowError();
 

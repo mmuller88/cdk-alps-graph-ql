@@ -40,7 +40,6 @@ new AlpsGraphQL(scope: Construct, id: string, props: AlpsGraphQLProps)
   * **schema** (<code>[Schema](#aws-cdk-aws-appsync-schema)</code>)  GraphQL schema definition. Specify how you want to define your schema. __*Default*__: schema will be generated code-first (i.e. addType, addObjectType, etc.)
   * **xrayEnabled** (<code>boolean</code>)  A flag indicating whether or not X-Ray tracing is enabled for the GraphQL API. __*Default*__: false
   * **alpsSpecFile** (<code>string</code>)  ALPS Spec File. 
-  * **tmpFile** (<code>string</code>)  Workaround for unified cli. 
 
 
 
@@ -56,7 +55,6 @@ Name | Type | Description
 -----|------|-------------
 **alpsSpecFile** | <code>string</code> | ALPS Spec File.
 **name**🔹 | <code>string</code> | the name of the GraphQL API.
-**tmpFile** | <code>string</code> | Workaround for unified cli.
 **authorizationConfig**?🔹 | <code>[AuthorizationConfig](#aws-cdk-aws-appsync-authorizationconfig)</code> | Optional authorization configuration.<br/>__*Default*__: API Key authorization
 **logConfig**?🔹 | <code>[LogConfig](#aws-cdk-aws-appsync-logconfig)</code> | Logging configuration for this api.<br/>__*Default*__: None
 **schema**?🔹 | <code>[Schema](#aws-cdk-aws-appsync-schema)</code> | GraphQL schema definition. Specify how you want to define your schema.<br/>__*Default*__: schema will be generated code-first (i.e. addType, addObjectType, etc.)
