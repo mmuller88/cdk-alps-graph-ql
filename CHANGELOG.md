@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.7 (2020-12-20)
+
+
+### Features
+
+* publish to nuget & maven ([0527fb3](https://github.com/mmuller88/cdk-alps-graph-ql/commit/0527fb3b4f80a36573f0c3cb37a90f7732a13e14))
+
 ### 0.0.6 (2020-12-11)
 
 
