@@ -23,6 +23,15 @@ const project = new AwsCdkConstructLibrary({
     distName: 'cdk-alps-graph-ql',
     module: 'cdk_alps_graph_ql',
   },
+  java: {
+    javaPackage: 'com.github.mmuller88.cdkAlpsGraphQl',
+    mavenGroupId: 'com.github.mmuller88',
+    mavenArtifactId: 'cdk-alps-graph-ql',
+  },
+  dotnet: {
+    dotNetNamespace: 'com.github.mmuller88',
+    packageId: 'com.github.mmuller88.CdkAlpsGraphQl',
+  },
   releaseBranches: ['main'],
   keywords: [
     'cdk',

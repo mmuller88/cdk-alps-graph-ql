@@ -111,9 +111,20 @@
   "jsii": {
     "outdir": "dist",
     "targets": {
+      "java": {
+        "package": "com.github.mmuller88.cdkAlpsGraphQl",
+        "maven": {
+          "groupId": "com.github.mmuller88",
+          "artifactId": "cdk-alps-graph-ql"
+        }
+      },
       "python": {
         "distName": "cdk-alps-graph-ql",
         "module": "cdk_alps_graph_ql"
+      },
+      "dotnet": {
+        "namespace": "com.github.mmuller88",
+        "packageId": "com.github.mmuller88.CdkAlpsGraphQl"
       }
     },
     "tsc": {

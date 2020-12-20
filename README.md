@@ -1,5 +1,7 @@
 [![NPM version](https://badge.fury.io/js/cdk-alps-graph-ql.svg)](https://badge.fury.io/js/cdk-alps-graph-ql)
 [![PyPI version](https://badge.fury.io/py/cdk-alps-graph-ql.svg)](https://badge.fury.io/py/cdk-alps-graph-ql)
+[![Maven version](https://maven-badges.herokuapp.com/maven-central/com.github.mmuller88.cdkAlpsSpecRestApi/cdk-alps-graph-ql/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.mmuller88.cdkAlpsSpecRestApi/cdk-alps-graph-ql)
+[![.NET version](https://img.shields.io/nuget/v/com.github.mmuller88.CdkAlpsGraphQl.svg?style=flat-square)](https://www.nuget.org/packages/com.github.mmuller88.CdkAlpsGraphQl/)
 ![Release](https://github.com/mmuller88/cdk-alps-graph-ql/workflows/Release/badge.svg)
 
 # CDK Alps Graph QL
