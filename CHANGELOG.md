@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.9 (2020-12-20)
+
+
+### Bug Fixes
+
+* maven badge ([5d5c274](https://github.com/mmuller88/cdk-alps-graph-ql/commit/5d5c2740c65dcee08c5beb94cfbfe046622ea849))
+
 ### 0.0.8 (2020-12-20)
 
 
